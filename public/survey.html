@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Survey Questions</h1>
+            <p class="lead">Answer the questions below and click submit to find your new, best friend!</p>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>For each question select your response based on the Questions.</p>
+                <button type="button" id="submitButton" class="btn btn-lg btn-primary">Submit</button>
+            </div>
+
+
+        </div>
+        <ul>
+            <li>
+                <h3>Question 1</h3>
+                <div>Your mind is always buzzing with unexplored ideas and plans.</div>
+                <div class="form-group">
+                    <label for="sell">Select Answer (select one):</label>
+                    <select class="form-control" id="q1">
+                        <option data-amount="1">Disagree</option>
+                        <option data-amount="2">Somewhat Disagree</option>
+                        <option data-amount="3">Indifferent</option>
+                        <option data-amount="4">Somewhat Agree</option>
+                        <option data-amount="5">Agree</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <h3>Question 2</h3>
+                <div>Generally speaking, you rely more on your experience than your imagination.</div>
+                <div class="form-group">
+                    <label for="sell">Select Answer (select one):</label>
+                    <select class="form-control" id="q2">
+                        <option data-amount="1">Disagree</option>
+                        <option data-amount="2">Somewhat Disagree</option>
+                        <option data-amount="3">Indifferent</option>
+                        <option data-amount="4">Somewhat Agree</option>
+                        <option data-amount="5">Agree</option>
+                    </select>
+                </div>
+
+            </li>
+
+            <li>
+                <h3>Question 3</h3>
+                <div>You find it easy to stay relaxed and focused even when there is some pressure.</div>
+                <div class="form-group">
+                    <label for="sell">Select Answer (select one):</label>
+                    <select class="form-control" id="q3">
+                        <option data-amount="1">Disagree</option>
+                        <option data-amount="2">Somewhat Disagree</option>
+                        <option data-amount="3">Indifferent</option>
+                        <option data-amount="4">Somewhat Agree</option>
+                        <option data-amount="5">Agree</option>
+                    </select>
+                </div>
+            </li>
+
+
+            <li>
+                <h3>Question 4</h3>
+                <div>You rarely do something just out of sheer curiosity.</div>
+                <div class="form-group">
+                <label for="sell">Select Answer (select one):</label>
+                <select class="form-control" id="q4">
+                    <option data-amount="1">Disagree</option>
+                    <option data-amount="2">Somewhat Disagree</option>
+                    <option data-amount="3">Indifferent</option>
+                    <option data-amount="4">Somewhat Agree</option>
+                    <option data-amount="5">Agree</option>
+                </select>
+    </div>
+    </li>
+
+
+    <li>
+        <h3>Question 5</h3>
+        <div>People can rarely upset you.</div>
+        <div class="form-group">
+        <label for="sell">Select Answer (select one):</label>
+        <select class="form-control" id="q5">
+            <option data-amount="1">Disagree</option>
+            <option data-amount="2">Somewhat Disagree</option>
+            <option data-amount="3">Indifferent</option>
+            <option data-amount="4">Somewhat Agree</option>
+            <option data-amount="5">Agree</option>
+        </select>
+        </div>
+    </li>
+
+    <li>
+        <h3>Question 6</h3>
+        <div>It is often difficult for you to relate to other people's feelings.</div>
+        <div class="form-group">
+            <label for="sell">Select Answer (select one):</label>
+            <select class="form-control" id="q6">
+                <option data-amount="1">Disagree</option>
+                <option data-amount="2">Somewhat Disagree</option>
+                <option data-amount="3">Indifferent</option>
+                <option data-amount="4">Somewhat Agree</option>
+                <option data-amount="5">Agree</option>
+            </select>
+        </div>
+    </li>
+
+
+    <li>
+        <h3>Question 7</h3>
+        <div>In a discussion, truth should be more important than people's sensitivities.</div>
+        <div class="form-group">
+            <label for="sell">Select Answer (select one):</label>
+            <select class="form-control" id="q7">
+                <option data-amount="1">Disagree</option>
+                <option data-amount="2">Somewhat Disagree</option>
+                <option data-amount="3">Indifferent</option>
+                <option data-amount="4">Somewhat Agree</option>
+                <option data-amount="5">Agree</option>
+            </select>
+        </div>
+    </li>
+
+    <li>
+        <h3>Question 8</h3>
+        <div>You rarely get carried away by fantasies and ideas.</div>
+        <div class="form-group">
+            <label for="sell">Select Answer (select one):</label>
+            <select class="form-control" id="q8">
+                <option data-amount="1">Disagree</option>
+                <option data-amount="2">Somewhat Disagree</option>
+                <option data-amount="3">Indifferent</option>
+                <option data-amount="4">Somewhat Agree</option>
+                <option data-amount="5">Agree</option>
+            </select>
+        </div>
+    </li>
+
+    <li>
+        <h3>Question 9</h3>
+        <div>You think everyone's views should be respected regardless of whether they are supported by facts or
+            not.</div>
+        <div class="form-group">
+            <label for="sell">Select Answer (select one):</label>
+            <select class="form-control" id="q9">
+                <option data-amount="1">Disagree</option>
+                <option data-amount="2">Somewhat Disagree</option>
+                <option data-amount="3">Indifferent</option>
+                <option data-amount="4">Somewhat Agree</option>
+                <option data-amount="5">Agree</option>
+            </select>
+        </div>
+    </li>
+    <li>
+        <h3>Question 10</h3>
+        <div>You feel more energetic after spending time with a group of people.</div>
+        <div class="form-group">
+            <label for="sell">Select Answer (select one):</label>
+            <select class="form-control" id="q10">
+                <option data-amount="1">Disagree</option>
+                <option data-amount="2">Somewhat Disagree</option>
+                <option data-amount="3">Indifferent</option>
+                <option data-amount="4">Somewhat Agree</option>
+                <option data-amount="5">Agree</option>
+            </select>
+        </div>
+    </li>
+    </ul>
+
+
+    </div>
+
+    </div>
+    </div>
+
+    <script>
+
+        
+        $(document).ready(function(){
+        
+       
+        $('#submitButton').on('click', function(){
+
+            event.preventDefault();
+            var answers = [];
+        
+          $.each($(".form-control option:selected"), function(){
+            answers.push($(this).attr("data-amount"));
+          });
+           
+          console.log(answers);
+
+
+
+        })
+        
+    
+        
+        });
+        
+        </script>
+</body>
+
+</html>
+
