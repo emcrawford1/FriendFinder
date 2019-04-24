@@ -4,13 +4,14 @@ var friendData = require('../app/data/friends');
 
 module.exports = function (app) {
 
-    app.get("/api/match", function (req, res) {
-        res.json(friendData);
-    });
+    // app.get("/api/match", function (req, res) {
+    //     res.json(friendData);
+    // });
 
 
     app.post("/api/match", function (req, res) {
         res.json(match(req.body, friendData));
+        console.log(req.body);
     })
 }
 
@@ -35,9 +36,9 @@ function match(userAnswers, potentialMatches) {
 
 function scoreCalculation(user, possibleMatch) {
     var total = 0;
-    for (var i = 0; i < user.length; i++) {
+    for (var i = 0; i < user.theAnswers.length; i++) {
 
-        total += Math.abs(user[i] - possibleMatch[i]);
+        total += Math.abs(user.theAnswers[i] - possibleMatch[i]);
     }
     return total;
 }

@@ -10,7 +10,7 @@ module.exports = function(app){
 
     //Default route
     app.get("*", function(req, res){
-        res.sendFile(path.join(__dirname, "../api/friends.js"));
+        res.sendFile(path.join(__dirname, "../public/home.html"));
     })
 }
 
